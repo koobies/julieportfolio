@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import contactPhoto from "@/assets/contact-photo.jpg";
+import { Linkedin, Instagram, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
