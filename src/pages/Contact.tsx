@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import contactPhoto from "@/assets/contact-photo.jpg";
 
 const Contact = () => {
   return (
