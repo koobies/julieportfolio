@@ -27,7 +27,7 @@ export const projects: Project[] = [
     videoUrl: "https://drive.google.com/file/d/1m8sGTBmGAZOiXP2C2noBYmNmNyL3XZ9H/preview",
   },
   {
-    title: "REalize",
+    title: "REALIZE (2026)",
     year: "2026",
     category: "Music Video — Co-Director & Artist",
     image: projectRealize,
