@@ -13,7 +13,7 @@ const About = () => {
           <div className="animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
             <img
               src={aboutPortrait}
-              alt="Portrait"
+              alt="Julianna Revilla"
               className="w-full object-cover"
               loading="lazy"
               width={800}
@@ -23,26 +23,31 @@ const About = () => {
 
           <div className="space-y-6 text-muted-foreground font-body text-sm leading-relaxed animate-fade-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
             <p>
-              If you've reached this section, it's because you liked my work and want to learn more about the person behind it. Thank you for reading.
+              A passionate and driven Filipino-American artist raised in Houston, TX with a deep love for creating and expressing through various mediums of art: from music videos, films, screenwriting, to singing, songwriting, and dance performance. Thriving on establishing unique ideas to life.
             </p>
             <p>
-              My name is [Your Name], a creative professional passionate about visual storytelling. I believe in the power of imagery to move people and create meaningful connections.
+              As a Director, Actress, Producer, Music Artist, and Stage Performer, Julianna brings a multi-disciplinary approach to every project. Her work spans independent short films, music videos, and large-scale stage performances — always driven by authentic storytelling and bold creative vision.
             </p>
             <p>
-              I love exploring new perspectives, finding beauty in the everyday, and pushing the boundaries of my craft. Mindfulness is essential to everything I do — whether I'm on set, in the studio, or simply observing the world around me.
-            </p>
-            <p>
-              To me, creating is about building community, contributing from my experiences as a human being, and discovering new parts of myself within each project. Although I'm very technical, I always leave room for emotions — because ultimately, it's feeling that makes work resonate.
-            </p>
-            <p>
-              Currently, I'm looking for new worlds to connect with and new stories to tell.
+              From performing with Kidz Bop on national tours to creative directing cultural stage performances at UT, Julianna has built a diverse body of work rooted in collaboration, cultural expression, and artistic excellence.
             </p>
 
+            <div className="pt-4">
+              <p className="text-xs tracking-[0.15em] text-muted-foreground uppercase mb-3">Disciplines</p>
+              <div className="flex flex-wrap gap-3">
+                {["Director", "Actress", "Producer", "Music Artist", "Stage Performance"].map((role) => (
+                  <span key={role} className="text-xs tracking-wide text-foreground border border-border px-3 py-1.5">
+                    {role}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <a
-              href="mailto:hello@example.com"
+              href="mailto:juliannarevilla@gmail.com"
               className="inline-block text-foreground underline underline-offset-4 hover:opacity-60 transition-opacity mt-4"
             >
-              hello@example.com
+              juliannarevilla@gmail.com
             </a>
           </div>
         </div>

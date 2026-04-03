@@ -27,7 +27,7 @@ const Navbar = () => {
         ))}
       </div>
       <Link to="/" className="font-display text-2xl md:text-3xl italic text-foreground">
-        Your Name.
+        Julianna Revilla.
       </Link>
     </nav>
   );
