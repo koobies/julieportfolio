@@ -11,10 +11,6 @@ const Contact = () => {
         </h1>
 
         <div className="text-center space-y-8 animate-fade-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
-          <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-xl mx-auto">
-            Interested in collaborating? I'd love to hear from you. Reach out and let's create something meaningful together.
-          </p>
-
           <a
             href="mailto:juliannarevilla@gmail.com"
             className="inline-block font-display text-2xl md:text-4xl text-foreground underline underline-offset-8 hover:opacity-60 transition-opacity"
@@ -48,11 +44,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.5s", opacity: 0 }}>
-          <img
-            src={contactPhoto}
-            alt="Behind the scenes"
-            className="w-full rounded-lg object-cover"
-          />
+          <img src={contactPhoto} alt="Behind the scenes" className="w-full rounded-lg object-cover" />
         </div>
       </section>
     </Layout>
