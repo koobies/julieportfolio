@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import aboutPortrait from "@/assets/about-portrait.jpg";
+import aboutPortrait from "@/assets/about-photo.jpg";
 import aboutCollage from "@/assets/about-collage.png";
 
 const About = () => {
