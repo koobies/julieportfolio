@@ -53,6 +53,14 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <section className="w-full px-0 pb-0">
+        <img
+          src={aboutCollage}
+          alt="Photo collage of Julianna's work"
+          className="w-full object-cover"
+          loading="lazy"
+        />
     </Layout>
   );
 };
