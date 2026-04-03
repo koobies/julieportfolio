@@ -21,6 +21,31 @@ const Contact = () => {
           >
             juliannarevilla@gmail.com
           </a>
+
+          <div className="flex justify-center gap-8 pt-4">
+            <a
+              href="https://www.linkedin.com/in/julianna-revilla-10278b346/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin size={28} />
+            </a>
+            <a
+              href="https://www.instagram.com/juliannarevilla/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Instagram size={28} />
+            </a>
+            <a
+              href="mailto:juliannarevilla@gmail.com"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Mail size={28} />
+            </a>
+          </div>
         </div>
         <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.5s", opacity: 0 }}>
           <img
