@@ -14,6 +14,7 @@ export interface Project {
   image: string;
   slug: string;
   youtubeUrl?: string;
+  videoUrl?: string;
 }
 
 export const projects: Project[] = [
@@ -23,6 +24,7 @@ export const projects: Project[] = [
     category: "Short Film",
     image: heroImage,
     slug: "free-room",
+    videoUrl: "https://drive.google.com/file/d/1m8sGTBmGAZOiXP2C2noBYmNmNyL3XZ9H/preview",
   },
   {
     title: "REalize",
