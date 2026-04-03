@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getYouTubeThumbnail } from "@/lib/youtube";
 
 interface ProjectCardProps {
   title: string;
@@ -6,14 +7,17 @@ interface ProjectCardProps {
   category: string;
   image: string;
   slug: string;
+  youtubeUrl?: string;
 }
 
-const ProjectCard = ({ title, year, category, image, slug }: ProjectCardProps) => {
+const ProjectCard = ({ title, year, category, image, slug, youtubeUrl }: ProjectCardProps) => {
+  const thumbnail = youtubeUrl ? getYouTubeThumbnail(youtubeUrl) ?? image : image;
+
   return (
     <Link to={`/project/${slug}`} className="group block">
       <div className="overflow-hidden">
         <img
-          src={image}
+          src={thumbnail}
           alt={title}
           className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
