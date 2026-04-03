@@ -10,14 +10,14 @@ const Contact = () => {
 
         <div className="text-center space-y-8 animate-fade-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
           <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-xl mx-auto">
-            Interested in working together? I'd love to hear from you. Reach out and let's create something beautiful.
+            Interested in collaborating? I'd love to hear from you. Reach out and let's create something meaningful together.
           </p>
 
           <a
-            href="mailto:hello@example.com"
+            href="mailto:juliannarevilla@gmail.com"
             className="inline-block font-display text-2xl md:text-4xl text-foreground underline underline-offset-8 hover:opacity-60 transition-opacity"
           >
-            hello@example.com
+            juliannarevilla@gmail.com
           </a>
         </div>
       </section>
