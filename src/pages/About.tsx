@@ -61,6 +61,7 @@ const About = () => {
           className="w-full object-cover"
           loading="lazy"
         />
+      </section>
     </Layout>
   );
 };
