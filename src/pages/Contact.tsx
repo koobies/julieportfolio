@@ -21,6 +21,13 @@ const Contact = () => {
             juliannarevilla@gmail.com
           </a>
         </div>
+        <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.5s", opacity: 0 }}>
+          <img
+            src={contactPhoto}
+            alt="Behind the scenes"
+            className="w-full rounded-lg object-cover"
+          />
+        </div>
       </section>
     </Layout>
   );
