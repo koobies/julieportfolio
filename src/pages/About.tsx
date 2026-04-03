@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import aboutPortrait from "@/assets/about-portrait.jpg";
+import aboutCollage from "@/assets/about-collage.png";
 
 const About = () => {
   return (
@@ -51,6 +52,15 @@ const About = () => {
             </a>
           </div>
         </div>
+      </section>
+
+      <section className="w-full px-0 pb-0">
+        <img
+          src={aboutCollage}
+          alt="Photo collage of Julianna's work"
+          className="w-full object-cover"
+          loading="lazy"
+        />
       </section>
     </Layout>
   );
