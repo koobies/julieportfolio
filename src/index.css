@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
+    --background: 140 22% 72%; /* sage/emerald green */
+    --foreground: 52 70% 82%; /* pastel yellow */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card: 140 22% 76%;
+    --card-foreground: 52 70% 82%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 140 22% 76%;
+    --popover-foreground: 52 70% 82%;
 
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 52 70% 82%;
+    --primary-foreground: 140 22% 20%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 140 18% 68%;
+    --secondary-foreground: 52 70% 82%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 140 18% 68%;
+    --muted-foreground: 52 45% 74%;
 
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 140 18% 68%;
+    --accent-foreground: 52 70% 82%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 8%;
+    --border: 140 15% 60%;
+    --input: 140 15% 60%;
+    --ring: 52 70% 82%;
 
     --radius: 0rem;
 
@@ -45,8 +45,8 @@
     --sidebar-border: 0 0% 91%;
     --sidebar-ring: 0 0% 59%;
 
-    --font-display: 'DM Serif Display', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --font-display: "DM Serif Display", serif;
+    --font-body: "DM Sans", sans-serif;
   }
 
   .dark {
@@ -82,7 +82,9 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-family: var(--font-display);
   }
 }
