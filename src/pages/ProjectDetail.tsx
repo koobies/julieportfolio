@@ -52,6 +52,16 @@ const ProjectDetail = () => {
                 allowFullScreen
               />
             </div>
+          ) : project.videoUrl ? (
+            <div className="aspect-video w-full">
+              <iframe
+                src={project.videoUrl}
+                title={project.title}
+                className="w-full h-full"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              />
+            </div>
           ) : (
             <img
               src={project.image}
