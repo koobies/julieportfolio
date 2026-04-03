@@ -8,10 +8,19 @@ interface ProjectCardProps {
   image: string;
   slug: string;
   youtubeUrl?: string;
+  videoUrl?: string;
 }
 
-const ProjectCard = ({ title, year, category, image, slug, youtubeUrl }: ProjectCardProps) => {
-  const thumbnail = youtubeUrl ? getYouTubeThumbnail(youtubeUrl) ?? image : image;
+const ProjectCard = ({ title, year, category, image, slug, youtubeUrl, videoUrl }: ProjectCardProps) => {
+  let thumbnail = image;
+  if (youtubeUrl) {
+    thumbnail = getYouTubeThumbnail(youtubeUrl) ?? image;
+  } else if (videoUrl) {
+    const match = videoUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+    if (match) {
+      thumbnail = `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1280`;
+    }
+  }
 
   return (
     <Link to={`/project/${slug}`} className="group block">
