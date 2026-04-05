@@ -12,10 +12,10 @@ const Contact = () => {
 
         <div className="text-center space-y-8 animate-fade-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
           <a
-            href="mailto:juliannarevilla@gmail.com"
-            className="inline-block font-display text-2xl md:text-4xl text-foreground underline underline-offset-8 hover:opacity-60 transition-opacity"
-          >
-            juliannarevilla@gmail.com
+              href="mailto:juliannarevilla05@gmail.com"
+              className="inline-block font-display text-2xl md:text-4xl text-foreground underline underline-offset-8 hover:opacity-60 transition-opacity"
+            >
+              juliannarevilla05@gmail.com
           </a>
 
           <div className="flex justify-center gap-8 pt-4">
@@ -36,7 +36,7 @@ const Contact = () => {
               <Instagram size={28} />
             </a>
             <a
-              href="mailto:juliannarevilla@gmail.com"
+                href="mailto:juliannarevilla05@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail size={28} />

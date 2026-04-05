@@ -34,10 +34,10 @@ const About = () => {
             </p>
 
             <a
-              href="mailto:juliannarevilla@gmail.com"
+              href="mailto:juliannarevilla05@gmail.com"
               className="inline-block text-foreground underline underline-offset-4 hover:opacity-60 transition-opacity mt-4"
             >
-              juliannarevilla@gmail.com
+              juliannarevilla05@gmail.com
             </a>
           </div>
         </div>
