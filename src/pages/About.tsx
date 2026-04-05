@@ -15,7 +15,8 @@ const About = () => {
             <img
               src={aboutPortrait}
               alt="Julianna Revilla"
-              className="w-full object-cover"
+              className="w-full object-cover block"
+              style={{ clipPath: "inset(0 1.2% 0 0.4%)" }}
               loading="lazy"
               width={800}
               height={1080}
