@@ -33,17 +33,6 @@ const About = () => {
               From performing with Kidz Bop on national tours to creative directing cultural stage performances at UT, Julianna has built a diverse body of work rooted in collaboration, cultural expression, and artistic excellence.
             </p>
 
-            <div className="pt-4">
-              <p className="text-xs tracking-[0.15em] text-muted-foreground uppercase mb-3">Disciplines</p>
-              <div className="flex flex-wrap gap-3">
-                {["Director", "Actress", "Producer", "Music Artist", "Stage Performance"].map((role) => (
-                  <span key={role} className="text-xs tracking-wide text-foreground border border-border px-3 py-1.5">
-                    {role}
-                  </span>
-                ))}
-              </div>
-            </div>
-
             <a
               href="mailto:juliannarevilla@gmail.com"
               className="inline-block text-foreground underline underline-offset-4 hover:opacity-60 transition-opacity mt-4"
