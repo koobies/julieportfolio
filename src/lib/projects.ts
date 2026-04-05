@@ -73,12 +73,4 @@ export const projects: Project[] = [
     slug: "kidz-bop-tour",
     youtubeUrl: "https://www.youtube.com/watch?v=0bJYeuq8hig",
   },
-  {
-    title: "Kidz Bop Interview — ABS-CBN",
-    year: "2020",
-    category: "Performer — Featured Interview",
-    image: project3,
-    slug: "kidz-bop-interview",
-    youtubeUrl: "https://www.youtube.com/watch?v=G3RGZculmDQ",
-  },
 ];
