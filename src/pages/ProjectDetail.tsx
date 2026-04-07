@@ -4,6 +4,23 @@ import { projects } from "@/lib/projects";
 import { getYouTubeId } from "@/lib/youtube";
 import { ArrowLeft } from "lucide-react";
 
+const getPlayableVideoUrl = (url: string) => {
+  if (!url.includes("dropbox.com")) {
+    return url;
+  }
+
+  try {
+    const parsed = new URL(url);
+    parsed.searchParams.delete("dl");
+    parsed.searchParams.set("raw", "1");
+    return parsed.toString();
+  } catch {
+    return url;
+  }
+};
+
+const isDirectVideoFile = (url: string) => /\.(mp4|webm|ogg|mov)(\?|$)/i.test(url);
+
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
@@ -22,6 +39,7 @@ const ProjectDetail = () => {
   }
 
   const videoId = project.youtubeUrl ? getYouTubeId(project.youtubeUrl) : null;
+  const resolvedVideoUrl = project.videoUrl ? getPlayableVideoUrl(project.videoUrl) : null;
 
   return (
     <Layout>
@@ -52,15 +70,24 @@ const ProjectDetail = () => {
                 allowFullScreen
               />
             </div>
-          ) : project.videoUrl ? (
+          ) : resolvedVideoUrl ? (
             <div className="aspect-video w-full">
-              <iframe
-                src={project.videoUrl}
-                title={project.title}
-                className="w-full h-full"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-              />
+              {isDirectVideoFile(resolvedVideoUrl) ? (
+                <video
+                  src={resolvedVideoUrl}
+                  className="w-full h-full object-cover"
+                  controls
+                  playsInline
+                />
+              ) : (
+                <iframe
+                  src={resolvedVideoUrl}
+                  title={project.title}
+                  className="w-full h-full"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                />
+              )}
             </div>
           ) : (
             <img

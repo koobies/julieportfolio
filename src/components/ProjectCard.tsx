@@ -51,7 +51,7 @@ const ProjectCard = ({ title, year, category, image, slug, youtubeUrl, videoUrl 
         }}
       />
       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-500 flex items-center justify-center">
-        <h3 className="font-display text-2xl md:text-3xl text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-500 tracking-wide uppercase">
+        <h3 className="font-display text-2xl md:text-3xl text-violet-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500 tracking-wide uppercase drop-shadow-lg">
           {title}
         </h3>
       </div>
